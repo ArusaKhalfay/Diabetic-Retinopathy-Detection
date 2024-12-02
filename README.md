@@ -30,6 +30,13 @@ I used the **2015 Diabetic Retinopathy Detection dataset** from Kaggle, containi
 
 [Link to Training Dataset](https://www.kaggle.com/competitions/diabetic-retinopathy-detection/data)
 
+![image](https://github.com/user-attachments/assets/3a0a843b-6aef-4ff9-ad0a-74fd656e049f)
+
+The training dataset included images captured with cameras of varying aspect ratios, which caused some images to have significant black regions that were irrelevant for prediction. Additionally, the images lacked uniformity in shape and size. To overcome these challenges, I applied preprocessing techniques to standardize the dataset and ensure consistency across all images. Using the albumentations library, I also performed image augmentation to enhance normalization and improve the model’s performance. The processed outcomes are displayed below:
+
+![image](https://github.com/user-attachments/assets/90526043-2667-4c37-bb59-f4815ad92360)
+
+
 ### Test Dataset
 I used the **2019 APTOS Blindness Detection dataset** for testing, with **3,663 fundus images** labeled similarly to the training dataset.  
 [Link to Test Dataset](https://www.kaggle.com/competitions/aptos2019-blindness-detection/)
@@ -58,6 +65,7 @@ EfficientNet, known for its scalability and state-of-the-art performance, proved
   - Best Accuracy: **87.66%** (EfficientNet-B3)
 - **Multi-class Classification (Levels of DR)**:  
   - Best Accuracy: **53.39%** (EfficientNet-B2)
+![image](https://github.com/user-attachments/assets/3a0753d9-d938-4677-b5c9-e4c3587a42ff)
 
 ---
 
